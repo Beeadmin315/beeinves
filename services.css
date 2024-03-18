@@ -107,9 +107,9 @@ body {
 /* Instagram Logo */
 #instagram-logo {
     position: absolute;
-    top: 70px; /* Adjust top spacing to fit below navbar */
-    left: 40px; /* Adjust left spacing as needed */
-    z-index: 1000; /* Ensure it appears above other content */
+    top: 10px; /* Adjust top spacing to fit below navbar */
+    left: 30px; /* Adjust left spacing as needed */
+
 }
 
 .instagram-logo img {
