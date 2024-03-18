@@ -1,6 +1,6 @@
-/* CSS for Bee Investigations Services Page */
 
-/* Global Styles */
+
+
 body {
     margin: 0;
     padding: 0;
@@ -9,7 +9,7 @@ body {
     padding-top: 60px; /* Add padding to the top of the body equal to the navbar height */
 }
 
-/* Navbar */
+
 .navbar {
     display: flex;
     justify-content: center;
@@ -61,7 +61,7 @@ body {
     display: none; /* Hide bar before the first link */
 }
 
-/* Services Section */
+
 .services {
     padding: 50px 20px; /* Adjust the padding for better spacing */
     text-align: center;
@@ -88,27 +88,35 @@ body {
 .services h3 {
     margin-bottom: 10px;
     color: #343a40; /* Dark text color */
-}
+/* Add this CSS to your existing CSS file */
 
-/* Instagram Logo */
-#instagram-logo {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    /* Add this CSS to your existing CSS file */
 
-/* PayPal Cart Logo */
 #paypal-cart {
     position: absolute;
-    top: 60px; /* Adjust top spacing to fit below navbar */
+    top: 70px; /* Adjust top spacing to fit below navbar */
     right: 10px; /* Adjust right spacing as needed */
     z-index: 1000; /* Ensure it appears above other content */
 }
 
 .paypal-cart-logo {
-    width: 40px; /* Adjust the cart logo size as needed */
+    width: 30px; /* Adjust the cart logo size as needed */
     height: auto;
 }
+
+/* Instagram Logo */
+#instagram-logo {
+    position: absolute;
+    top: 70px; /* Adjust top spacing to fit below navbar */
+    left: 10px; /* Adjust left spacing as needed */
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+.instagram-logo img {
+    width: 30px; /* Adjust the Instagram logo size as needed */
+    height: auto;
+}
+
+
 
 
 
