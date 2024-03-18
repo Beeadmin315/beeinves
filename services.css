@@ -94,32 +94,33 @@ body {
 /* PayPal Cart Logo */
 #paypal-cart {
     position: absolute;
-    top: 70px; /* Adjust top spacing to fit below navbar */
+    top: 50px; /* Adjust top spacing to position below navbar */
     right: 10px; /* Adjust right spacing as needed */
     z-index: 1000; /* Ensure it appears above other content */
 }
 
 .paypal-cart-logo {
-    width: 5px; /* Adjust the cart logo size as needed */
+    width: 20px; /* Adjust the cart logo size as needed */
     height: auto;
 }
 
 /* Instagram Logo */
 #instagram-logo {
     position: absolute;
-    top: 10px; /* Adjust top spacing to fit below navbar */
-    left: 30px; /* Adjust left spacing as needed */
-
+    top: 50px; /* Adjust top spacing to position below navbar */
+    left: 40px; /* Adjust left spacing as needed */
+    z-index: 1000; /* Ensure it appears above other content */
 }
 
 .instagram-logo img {
-    width: 5px; 
+    width: 20px; /* Adjust the Instagram logo size as needed */
     height: auto;
 }
 
 /* Navbar Styles (Keep your existing styles) */
 /* Services Section Styles (Keep your existing styles) */
 /* Google Form Styles (Keep your existing styles) */
+
 
 
 
