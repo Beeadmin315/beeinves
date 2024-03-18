@@ -93,13 +93,12 @@ body {
 
 #paypal-cart {
     position: absolute;
-    top: 70px; /* Adjust top spacing to fit below navbar */
-    right: 10px; /* Adjust right spacing as needed */
-    z-index: 1000; /* Ensure it appears above other content */
-}
+    top: 70px; 
+    right: 10px; 
+    z-index: 1000; 
 
 .paypal-cart-logo {
-    width: 30px; /* Adjust the cart logo size as needed */
+    width: 12px; 
     height: auto;
 }
 
