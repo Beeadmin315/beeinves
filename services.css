@@ -95,13 +95,12 @@ body {
     position: fixed;
     bottom: 20px;
     right: 20px;
-}
-/* Add this CSS to your existing CSS file */
+    /* Add this CSS to your existing CSS file */
 
 /* PayPal Cart Logo */
 #paypal-cart {
-    position: fixed;
-    top: 10px; /* Adjust top spacing as needed */
+    position: absolute;
+    top: 60px; /* Adjust top spacing to fit below navbar */
     right: 10px; /* Adjust right spacing as needed */
     z-index: 1000; /* Ensure it appears above other content */
 }
@@ -113,6 +112,3 @@ body {
 
 
 
-.instagram-logo {
-    width: 40px; /* Adjust the Instagram logo size */
-}
