@@ -123,7 +123,7 @@ navbar {
     justify-content: center;
     align-items: center;
     background-color: #343a40; /* Dark background color */
-    padding: 8px 0; /* Reduce top and bottom padding */
+    padding: 7px 0; /* Reduce top and bottom padding */
     position: fixed;
     top: 0;
     width: 100%;
