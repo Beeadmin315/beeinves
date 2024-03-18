@@ -1,0 +1,90 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    background-color: #303d4e; /* Darker gray-blue */
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    z-index: 1000;
+}
+
+.navbar__logo img {
+    height: 50px;
+}
+
+.navbar__toggle {
+    display: none;
+}
+
+.nav__menu {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.navbar__link {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+    padding: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.navbar__link:hover {
+    color: #6699cc;
+}
+
+/* About Us Section */
+.about {
+    padding: 100px 20px;
+    color: #fff;
+}
+
+.about__content {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.image-container {
+    margin-bottom: 40px;
+}
+
+.portrait {
+    width: 200px; /* Adjust size as needed */
+    height: auto;
+    border-radius: 50%;
+}
+
+.text-container {
+    width: 100%;
+}
+
+.text-container h2 {
+    margin-bottom: 20px;
+}
+
+.text-container p {
+    margin-bottom: 20px;
+}
+.nav__menu {
+    display: flex;
+    justify-content: center; /* Centering the menu items */
+    align-items: center;
+    flex-grow: 1;
+}
