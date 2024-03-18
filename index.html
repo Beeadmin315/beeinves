@@ -31,7 +31,7 @@
 
     <!-- Image Section -->
     <section id="beeimg" class="beeimg">
-        <img src="beeimg.jpg" alt="Bee Investigations" class="beeimg">
+        <img src="beeimg.jpg" alt="Bee Investigations" class="beeimg" id="rotatingBee">
     </section>
 
     <!-- Services Section -->
@@ -67,9 +67,18 @@
 
     <!-- Scripts -->
     <script src="index.js"></script>
+    <script>
+        const rotatingBee = document.getElementById('rotatingBee');
+        let rotation = 0;
 
+        rotatingBee.addEventListener('click', () => {
+            rotation += 45; // Change the degree as desired
+            rotatingBee.style.transform = `rotate(${rotation}deg)`;
+        });
+    </script>
 </body>
 </html>
+
 
 
 
