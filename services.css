@@ -1,6 +1,4 @@
 
-
-
 body {
     margin: 0;
     padding: 0;
@@ -58,8 +56,7 @@ body {
 }
 
 .navbar__link:first-child::before {
-    display: none; /* Hide bar before the first link */
-}
+    display: none; 
 
 
 .services {
@@ -88,18 +85,15 @@ body {
 .services h3 {
     margin-bottom: 10px;
     color: #343a40; /* Dark text color */
-/* Add this CSS to your existing CSS file */
-
-
-.instagram-logo img {
-    width: 5px; /* Adjust the Instagram logo size as needed */
-    height: auto;
 }
 
+/* Instagram Logo */
+#instagram-logo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
 
-
-
-
-
-
-
+.instagram-logo {
+    width: 40px; /* Adjust the Instagram logo size */
+}
