@@ -140,6 +140,7 @@ body {
     bottom: 5px;
     right: 5px;
     width: 20px; /* Adjust the Instagram logo size as needed */
+    font-size: small; 
     height: auto;
 }
 
