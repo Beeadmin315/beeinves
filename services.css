@@ -133,9 +133,3 @@ body {
     width: 100%;
     z-index: 1000;
 }
-
-#instagram-logo {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-}
