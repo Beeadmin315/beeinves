@@ -42,12 +42,13 @@ body {
 
 /* Services Section */
 .services {
-    padding: 5rem 5vw 10vh; /* Adjusted padding */
+    padding: 8rem 5vw 10vh; /* Adjusted padding */
     text-align: center; /* Center aligning text */
 }
 
 .services__content {
     max-width: 800px;
+    margin-top: -4rem; /* Pulling content up */
 }
 
 .services__content h2 {
@@ -75,6 +76,7 @@ body {
 .google-form {
     max-width: 800px;
     margin: 2rem auto; /* Adjusted margin */
+}
 }
 
 
