@@ -1,92 +1,85 @@
-/* Global Styles */
-body {
+/* Reset CSS */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f8f9fa; /* Light gray background */
-    padding-top: 60px; /* Add padding to the top of the body equal to the navbar height */
+    background-color: #f4f4f4;
+    line-height: 1.6;
 }
 
 /* Navbar */
 .navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    background-color: #343a40; /* Dark background color */
-    padding: 10px 0;
     position: fixed;
-    top: 0;
     width: 100%;
+    top: 0;
     z-index: 1000;
 }
 
-.navbar__logo {
-    display: flex;
-    align-items: center;
-    margin-right: auto; /* Push the logo to the left */
-    padding: 0 20px;
-}
-
 .navbar__logo img {
-    max-width: 150px; /* Adjust the logo size as needed */
-}
-
-.nav__menu {
-    display: flex;
-    align-items: center;
-    padding: 0 20px;
+    max-width: 100px;
 }
 
 .navbar__link {
     color: #fff;
     text-decoration: none;
-    margin: 0 10px;
-    position: relative;
+    margin-left: 1rem;
 }
 
-.navbar__link::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    right: -5px;
-    transform: translateY(-50%);
-    height: 70%;
-    width: 1px;
-    background-color: rgba(255, 255, 255, 0.5); /* Bar color */
-}
-
-.navbar__link:first-child::before {
-    display: none; /* Hide bar before the first link */
+.navbar__link.active {
+    font-weight: bold;
 }
 
 /* Services Section */
 .services {
-    padding: 50px 20px; /* Adjust the padding for better spacing */
-    text-align: center;
-    background-color: #ffffff; /* White background */
+    padding: 8rem 5vw 10vh; /* Adjusted padding */
+    text-align: center; /* Center aligning text */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.services h2 {
-    color: #343a40; /* Dark text color */
+.services__content {
+    max-width: 800px;
 }
 
-.services p {
-    color: #6c757d; /* Gray text color */
+.services__content h2 {
+    margin-bottom: 2rem; /* Increased spacing */
 }
 
-.services ul {
+.services__content ul {
     list-style: none;
-    padding: 0;
+    padding-left: 0;
 }
 
-.services li {
-    margin-bottom: 30px;
+.services__content li {
+    margin-bottom: 2rem;
 }
 
-.services h3 {
-    margin-bottom: 10px;
-    color: #343a40; /* Dark text color */
+.services__content h3 {
+    margin-bottom: 1rem; /* Increased spacing */
 }
+
+.services__content p {
+    margin-bottom: 1.5rem; /* Increased spacing */
+}
+
+/* Google Form */
+.google-form {
+    max-width: 800px;
+    margin: 2rem auto; /* Adjusted margin */
+}
+
 
 
 
