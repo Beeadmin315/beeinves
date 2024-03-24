@@ -42,12 +42,8 @@ body {
 
 /* Services Section */
 .services {
-    padding: 10vh 5vw; /* Adjusted padding */
+    padding: 5rem 5vw 10vh; /* Adjusted padding */
     text-align: center; /* Center aligning text */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .services__content {
