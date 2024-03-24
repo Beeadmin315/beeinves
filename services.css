@@ -1,4 +1,4 @@
-
+/* Reset CSS */
 * {
     margin: 0;
     padding: 0;
@@ -42,9 +42,43 @@ body {
 
 /* Services Section */
 .services {
-    padding: 6rem 2rem; /* Adjusted padding */
+    padding: 10vh 5vw; /* Adjusted padding */
     text-align: center; /* Center aligning text */
-    margin-top: 5rem; /* Providing space for the fixed navbar */
     display: flex;
-    flex-direction:
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.services__content {
+    max-width: 800px;
+}
+
+.services__content h2 {
+    margin-bottom: 2rem; /* Increased spacing */
+}
+
+.services__content ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.services__content li {
+    margin-bottom: 2rem;
+}
+
+.services__content h3 {
+    margin-bottom: 1rem; /* Increased spacing */
+}
+
+.services__content p {
+    margin-bottom: 1.5rem; /* Increased spacing */
+}
+
+/* Google Form */
+.google-form {
+    max-width: 800px;
+    margin: 2rem auto; /* Adjusted margin */
+}
+
 
