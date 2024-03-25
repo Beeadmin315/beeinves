@@ -140,7 +140,14 @@ body {
     max-width: 100px; /* Adjust the max-width as needed */
     height: auto; /* Maintain aspect ratio */
 }
-
+.magn1.jpg {    
+max-width: 100px; /* Adjust the max-width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+magp.jpg {
+    max-width: 100px; /* Adjust the max-width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
 
 
 
