@@ -27,7 +27,7 @@ body {
 }
 
 .navbar__logo img {
-    max-width: 150px; /* Adjust the logo size as needed */
+    max-width: 100px; 
 }
 
 .nav__menu {
@@ -61,7 +61,7 @@ body {
 /* Adjust content margin to accommodate the fixed navbar */
 .container {
     max-width: 800px;
-    margin: 60px auto 50px; /* Adjusted top margin to accommodate the fixed navbar */
+    margin: 40px auto 50px; /* Adjusted top margin to accommodate the fixed navbar */
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
