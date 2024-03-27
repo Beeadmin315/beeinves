@@ -129,7 +129,7 @@ body {
     .navbar__link::before {
         display: none; /* Hide bars on smaller screens */
     }
-}
+
 /* Image Section */
 .beeimg {
     text-align: center;
@@ -137,7 +137,7 @@ body {
 }
 
 .beeimg img {
-    max-width: 100px; /* Adjust the max-width as needed */
-    height: auto; /* Maintain aspect ratio */
-}
+    max-width: 100%; 
+    height: auto; 
+
 
