@@ -137,8 +137,7 @@ body {
 }
 
 .beeimg img {
-    max-width: 60x; /* Adjust the max-width as needed */ */for festive favicon/nav image adjust for other img */
+    max-width: 100px; /* Adjust the max-width as needed */
     height: auto; /* Maintain aspect ratio */
 }
-
 
