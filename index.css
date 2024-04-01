@@ -130,7 +130,6 @@ body {
         display: none; /* Hide bars on smaller screens */
     }
 
-/* Image Section */
 .beeimg {
     text-align: center;
     padding: 20px;
@@ -139,13 +138,13 @@ body {
 .beeimg img {
     max-width: 100%; 
     height: auto; 
-
 }
-    /* Media Query for smaller screens */
+
+/* Media Query for smaller screens */
 @media screen and (max-width: 768px) {
     .beeimg img {
-        max-width: 80%; /* Reduce max-width for smaller screens */
+        max-width: 50%; /* Reduce max-width for smaller screens */
     }
-} 
+}
 
 
