@@ -143,7 +143,7 @@ body {
 /* Media Query for smaller screens */
 @media screen and (max-width: 768px) {
     .beeimg img {
-        max-width: 50%; /* Reduce max-width for smaller screens */
+        max-width: 30%; /* Reduce max-width for smaller screens */
     }
 }
 
