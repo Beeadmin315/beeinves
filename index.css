@@ -130,21 +130,19 @@ body {
         display: none; /* Hide bars on smaller screens */
     }
 
-.beeimg {
-    text-align: center;
-    padding: 20px;
-}
-
-.beeimg img {
-    max-width: 100%; 
-    height: auto; 
-}
-
-/* Media Query for smaller screens */
-@media screen and (max-width: 768px) {
     .beeimg img {
-        max-width: 30%; /* Reduce max-width for smaller screens */
+        max-width: 100%; /* Adjusted image size for smaller screens */
+        height: auto; /* Ensure image aspect ratio is maintained */
+    }
+
+    /* Adjust the size of specific images */
+    #home .beeimg img {
+        max-width: 80%; /* Adjusted max-width for the home section image */
+    }
+
+    #services .beeimg img,
+    #faq .beeimg img,
+    #contact .beeimg img {
+        max-width: 60%; /* Adjusted max-width for the services, FAQ, and contact section images */
     }
 }
-
-
