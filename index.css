@@ -136,13 +136,19 @@ body {
     }
 
     /* Adjust the size of specific images */
-    #home .beeimg img {
-        max-width: 80%; /* Adjusted max-width for the home section image */
-    }
-
+    #home .beeimg img,
     #services .beeimg img,
     #faq .beeimg img,
     #contact .beeimg img {
-        max-width: 60%; /* Adjusted max-width for the services, FAQ, and contact section images */
+        max-width: 80%; /* Adjusted max-width for all section images */
     }
 }
+
+/* Adjust the size of specific images for larger screens */
+#home .beeimg img,
+#services .beeimg img,
+#faq .beeimg img,
+#contact .beeimg img {
+    max-width: 50%; /* Adjusted max-width for all section images */
+}
+
