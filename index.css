@@ -84,6 +84,12 @@ body {
     text-align: center;
     background-color: #ffffff; /* White background */
 }
+.hero .beeimg img,
+.services .beeimg img,
+.faq .beeimg img,
+.contact .beeimg img {
+    max-width: 50%; /* Set max-width to match the final two images */
+}
 
 .services h2,
 .faq h2,
