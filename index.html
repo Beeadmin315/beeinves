@@ -7,6 +7,20 @@
     <link rel="stylesheet" type="text/css" href="index.css">
     <link rel="icon" type="image/png" href="favicon1.png">
     <title>Bee Investigations</title>
+    <style>
+        /* Add custom styles for image responsiveness */
+        .beeimg img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        @media only screen and (max-width: 768px) {
+            /* Adjust image size for smaller screens (e.g., phones) */
+            .beeimg img {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Navbar Section -->
@@ -30,8 +44,8 @@
     </section>
 
     <!-- Image Section -->
-    <section id="beeimg" class="beeimg">
-        <img src="beeimg.jpg" alt="Bee Investigations" class="beeimg" id="rotatingBee">
+    <section class="beeimg">
+        <img src="beeimg.jpg" alt="Bee Investigations">
     </section>
 
     <!-- Services Section -->
@@ -41,9 +55,10 @@
             <p>Bee Investigations, led by Theresa Barger, a seasoned law enforcement veteran, offers top-tier private investigation services from Fort Collins, Colorado. Our focus is on providing accurate, discreet, and thorough background investigations and surveillance. Contact us at payinfo1@beeinvestigations.org for pricing and inquiries. Bee Investigations is your trusted partner for reliable and professional investigative solutions.</p>
         </div>
     </section>
-       <!-- Image Section -->
-    <section id="beeimg" class="beeimg">
-        <img src="magn1.jpg" alt="Bee Investigations" class="beeimg" id="rotatingBee">
+    
+    <!-- Image Section -->
+    <section class="beeimg">
+        <img src="magn1.jpg" alt="Bee Investigations">
     </section>
 
     <!-- FAQ Section -->
@@ -51,11 +66,12 @@
         <div class="faq__content">
             <h2>Frequently Asked Questions</h2>
             <p>Got questions? We have answers. Check out our FAQ section.</p>
-           <!-- Image Section -->
-    <section id="beeimg" class="beeimg">
-        <img src="magf.jpg" alt="Bee Investigations" class="beeimg" id="rotatingBee">
-    </section>
         </div>
+    </section>
+    
+    <!-- Image Section -->
+    <section class="beeimg">
+        <img src="magf.jpg" alt="Bee Investigations">
     </section>
 
     <!-- Contact Section -->
@@ -63,9 +79,6 @@
         <div class="contact__content">
             <h2>Contact Us</h2>
             <p>Elevate your expectations with Bee Investigations, the foremost private investigations servicing Colorado</p>
-              <!-- Image Section -->
-    <section id="beeimg" class="beeimg">
-        <img src="magp.jpg" alt="Bee Investigations" class="beeimg" id="rotatingBee">
         </div>
     </section>
 
