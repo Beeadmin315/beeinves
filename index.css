@@ -66,6 +66,12 @@ body {
     padding: 80px 20px 20px; /* Adjusted padding to accommodate navbar */
     text-align: center;
     background-color: #ffffff; /* White background */
+.hero .beeimg img,
+.services .beeimg img,
+.faq .beeimg img,
+.contact .beeimg img {
+    max-width: 50%; /* Set max-width to match the final two images */
+}
 }
 
 .hero h1 {
@@ -84,12 +90,7 @@ body {
     text-align: center;
     background-color: #ffffff; /* White background */
 }
-.hero .beeimg img,
-.services .beeimg img,
-.faq .beeimg img,
-.contact .beeimg img {
-    max-width: 50%; /* Set max-width to match the final two images */
-}
+
 
 .services h2,
 .faq h2,
