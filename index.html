@@ -1,96 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="index.css">
-    <link rel="icon" type="image/png" href="favicon1.png">
-    <title>Bee Investigations</title>
-    <style>
-        /* Add custom styles for image responsiveness */
-        .beeimg img {
-            max-width: 40%;
-            height: auto;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bee Investigations | Private Investigations</title>
 
-        @media only screen and (max-width: 300px) {
-            /* Adjust image size for smaller screens (e.g., phones) */
-            .beeimg img {
-                width: 30%;
-            }
-        }
-    </style>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon1.png" />
+
+  <style>
+    :root {
+      --primary: #f5b301;
+      --dark: #0f172a;
+      --light: #f8fafc;
+      --muted: #94a3b8;
+      --glass: rgba(255, 255, 255, 0.08);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(180deg, #020617, #0f172a);
+      color: var(--light);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    /* Navbar */
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(12px);
+      background: rgba(2, 6, 23, 0.6);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .navbar__inner {
+      max-width: 1200px;
+      margin: auto;
+      padding: 1rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      width: 44px;
+    }
+
+    .nav__menu {
+      display: flex;
+      gap: 2rem;
+    }
+
+    .navbar__link {
+      font-weight: 500;
+      color: var(--muted);
+      transition: color 0.3s ease;
+    }
+
+    .navbar__link:hover {
+      color: var(--primary);
+    }
+
+    /* Hero */
+    .hero {
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+      background:
+        radial-gradient(circle at top, rgba(245, 179, 1, 0.15), transparent 60%),
+        linear-gradient(180deg, transparent, #020617);
+    }
+
+    .hero h1 {
+      font-size: clamp(2.5rem, 6vw, 4rem);
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: auto;
+      color: var(--muted);
+      font-size: 1.1rem;
+    }
+
+    /* Section Base */
+    section {
+      padding: 6rem 1.5rem;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    /* Image Panels */
+    .image-panel {
+      display: grid;
+      place-items: center;
+      padding: 4rem 1.5rem;
+    }
+
+    .image-panel img {
+      width: min(420px, 90%);
+      border-radius: 20px;
+      box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6);
+      transition: transform 0.4s ease;
+    }
+
+    .image-panel img:hover {
+      transform: scale(1.04);
+    }
+
+    /* Glass Sections */
+    .glass {
+      background: var(--glass);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 24px;
+      padding: 3rem;
+      backdrop-filter: blur(16px);
+    }
+
+    h2 {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      color: var(--muted);
+    }
+
+    /* Services */
+    .services p {
+      margin-top: 1rem;
+      max-width: 900px;
+    }
+
+    /* FAQ */
+    .faq p {
+      margin-top: 0.5rem;
+    }
+
+    /* Contact */
+    .contact {
+      text-align: center;
+    }
+
+    /* Instagram */
+    #instagram-logo {
+      display: flex;
+      justify-content: center;
+      padding: 3rem 0 4rem;
+    }
+
+    .instagram-logo {
+      width: 40px;
+      opacity: 0.7;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .instagram-logo:hover {
+      transform: scale(1.15);
+      opacity: 1;
+    }
+
+    /* Footer spacing */
+    footer {
+      padding-bottom: 2rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .nav__menu {
+        gap: 1.25rem;
+      }
+
+      section {
+        padding: 4rem 1.25rem;
+      }
+
+      .glass {
+        padding: 2rem;
+      }
+    }
+  </style>
 </head>
 <body>
-    <!-- Navbar Section -->
-    <nav class="navbar">
-        <div class="navbar__logo" id="scrollToAbout">
-            <a href="index.html"><img src="favicon1.png" alt="Logo" class="logo"></a>
-        </div>
-        <div class="nav__menu">
-            <a href="aboutus.html" class="navbar__link">About Us</a>
-            <a href="ser.html" class="navbar__link">Services</a>
-            <a href="faq.html" class="navbar__link">FAQ</a>
-        </div>
-    </nav>
-    
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero__content">
-            <h1>Welcome to Bee Investigations</h1>
-            <p>Elevate your expectations with Bee Investigations, the foremost private investigations service in Fort Collins, Colorado.</p>
-        </div>
-    </section>
 
-    <!-- Image Section -->
-    <section class="beeimg">
-        <img src="beeimg.jpg" alt="Bee Investigations">
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <div class="services__content">
-            <h2>Our Services</h2>
-            <p>Bee Investigations, led by Theresa Barger, a seasoned law enforcement veteran, offers top-tier private investigation services from Fort Collins, Colorado. Our focus is on providing accurate, discreet, and thorough background investigations and surveillance. Contact us at payinfo1@beeinvestigations.org for pricing and inquiries. Bee Investigations is your trusted partner for reliable and professional investigative solutions.</p>
-        </div>
-    </section>
-    
-    <!-- Image Section -->
-    <section class="beeimg">
-        <img src="magn1.jpg" alt="Bee Investigations">
-    </section>
-
-    <!-- FAQ Section -->
-    <section id="faq" class="faq">
-        <div class="faq__content">
-            <h2>Frequently Asked Questions</h2>
-            <p>Got questions? We have answers. Check out our FAQ section.</p>
-        </div>
-    </section>
-    
-    <!-- Image Section -->
-    <section class="beeimg">
-        <img src="magf.jpg" alt="Bee Investigations">
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="contact__content">
-            <h2>Contact Us</h2>
-            <p>Elevate your expectations with Bee Investigations, the foremost private investigations servicing Colorado</p>
-        </div>
-    </section>
-
-    <!-- Instagram Logo Section -->
-    <div id="instagram-logo">
-        <a href="https://www.instagram.com/beeinvestigationsllc" target="_blank">
-            <img src="insta.png" alt="Instagram Logo" class="instagram-logo">
-        </a>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar__inner">
+      <a href="index.html">
+        <img src="favicon1.png" alt="Bee Investigations Logo" class="logo" />
+      </a>
+      <div class="nav__menu">
+        <a href="aboutus.html" class="navbar__link">About</a>
+        <a href="ser.html" class="navbar__link">Services</a>
+        <a href="faq.html" class="navbar__link">FAQ</a>
+      </div>
     </div>
-</body>
-</html>
-
 
 
 
